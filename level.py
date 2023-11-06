@@ -49,7 +49,7 @@ class Level:
                         if style == "grass":
                             Tile(
                                 (x, y),
-                                [self.visible_sprites],
+                                [self.visible_sprites, self.obstacles_sprites],
                                 "grass",
                                 random.choice(graphics["grass"]),
                             )
